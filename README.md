@@ -1,70 +1,90 @@
 # Rajat Manohara - Professional Portfolio
 
-A premium, modern, and responsive developer portfolio website built with pure HTML, CSS, and Vanilla JavaScript.
+A modern, responsive, and performance-optimized personal developer portfolio website engineered with pure **HTML5**, **CSS3**, and **Vanilla JavaScript**.
 
-## 🚀 Features
+Focused on communicating Rajat Manohara's expertise in **Java Backend Development**, **Spring Boot**, **REST APIs**, and **Relational Database Systems**.
 
-- **Modern UI/UX**: Dark theme with purple and cyan accents, glassmorphism, and smooth transitions.
-- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices.
-- **Interactive Elements**:
-  - Dynamic typing animation for professional titles.
-  - Scroll reveal animations for sections.
-  - Smooth scrolling navigation.
-  - Active section highlighting in the navbar.
-  - Functional mobile hamburger menu.
-  - Back-to-top button.
-- **9 Professional Sections**:
-  1. Sticky Navbar
-  2. Hero Section with visual elements
-  3. About Me
-  4. Technical Skills (categorized)
-  5. Featured Projects (with status and tags)
-  6. Experience & Education Timeline
-  7. Achievements & Certifications
-  8. Contact Section with Form Validation
-  9. Footer with dynamic year
+---
 
-## 🛠️ Built With
+## 🚀 Key Features
 
-- **HTML5**: Semantic structure.
-- **CSS3**: Custom properties (variables), Flexbox, Grid, and Media Queries.
-- **Vanilla JavaScript**: DOM manipulation, Intersection Observer API, and custom animations.
-- **Lucide Icons**: Clean and consistent iconography via CDN.
-- **Google Fonts**: Inter font family.
+- **Engineered Visual Identity**:
+  - Dark charcoal and obsidian palette with subtle ambient purple and cyan accents.
+  - Interactive backend code terminal hero previewing Java / Spring Boot application architecture.
+  - Minimal glassmorphism and glow borders.
+- **Section Architecture (9 Complete Sections)**:
+  1. **Sticky Header / Navigation**: Desktop nav & responsive mobile slide menu with smooth scrolling, accessible ARIA attributes, and active section scroll tracking.
+  2. **Hero Section**: Strong headline (*"Building Reliable Backend Systems with Java"*), dynamic typing title animation, resume CTA, and social links.
+  3. **About Me**: Narrative and three core engineering pillars (Backend Architecture, Database Engineering, and Software Craftsmanship).
+  4. **Technical Skills**: Structured categories (Programming, Backend Development, Databases, Frontend, Developer Tools) with zero fake percentages.
+  5. **Featured Projects**:
+     - *BIS360 – AI Standards & Compliance Copilot*
+     - *Smart Deal Finder & Price Tracker*
+     - Clear, honest capability breakdown distinguishing **Implemented**, **In-Progress**, and **Planned** features.
+  6. **Experience & Education**: Clean timeline showcasing academic credentials and practical backend development projects with clearly designated editable placeholders.
+  7. **Achievements & Certifications**: Grounded, verifiable technical milestones (Core Java Mastery, Relational Database Design, RESTful API Design) and verified credential slots.
+  8. **Contact Section**: Detailed contact cards with copy-to-clipboard functionality and an accessible form with client-side validation, RFC-compliant email checking, and honest `mailto:` handling (no fake server submissions).
+  9. **Footer**: Dynamic copyright year, quick site directory, and social links.
+- **Accessibility & UX**:
+  - Semantic HTML5 elements and WCAG-compliant color contrast.
+  - Skip-to-content navigation for assistive tech.
+  - Fully keyboard navigatable with visible `:focus-visible` outlines.
+  - Respects `@media (prefers-reduced-motion: reduce)`.
+  - Zero horizontal overflow across all screen widths (320px to 4K).
 
-## 📁 Project Structure
+---
+
+## 🛠️ Technology Stack
+
+- **HTML5**: Semantic document markup and accessible ARIA attributes.
+- **CSS3**: Modern CSS variables, Grid, Flexbox, responsive typography, and media queries.
+- **Vanilla JavaScript (ES6+)**: Pure DOM manipulation, Intersection Observer API, and input validation with strictly zero frameworks.
+- **Lucide Icons**: SVG icon library via CDN.
+- **Google Fonts**: Inter & JetBrains Mono.
+
+---
+
+## 📁 Directory Structure
 
 ```text
 portfolio/
-├── index.html          # Main entry point
+├── index.html          # Main HTML document with 9 structured sections
 ├── css/
-│   └── style.css       # Core styling and responsiveness
+│   └── style.css       # Core stylesheet (Design system, responsive breakpoints, dark theme)
 ├── js/
-│   └── script.js       # Interactions and animations
-├── assets/             # Images and local icons (placeholders)
-└── README.md           # Project documentation
+│   └── script.js       # Vanilla JS (Typing effect, scroll tracking, form validation, copy utilities)
+└── README.md           # Documentation & customization guide
 ```
 
-## 📝 How to Customize
+---
 
-1. **Personal Info**: Open `index.html` and search for placeholders like `[Your University Name]`, `[Company Name]`, and `placeholder@email.com`.
-2. **Projects**: Update the `projects__container` section in `index.html` with your own project details and images.
-3. **Social Links**: Update the `href` attributes in the hero and footer social sections.
-4. **Resume**: Replace the `#` in the Resume button with a link to your hosted PDF.
+## ✏️ Quick Customization Guide
 
-## 💻 How to Run Locally
-
-1. Clone or download this repository.
-2. Navigate to the `portfolio/` directory.
-3. Open `index.html` in any modern web browser (Chrome, Firefox, Edge, etc.).
-4. No local server or build process is required!
-
-## 🌐 Deployment Recommendation
-
-This is a static website and can be hosted for free on:
-- **GitHub Pages**: Best for developers.
-- **Netlify**: Super easy drag-and-drop or Git integration.
-- **Vercel**: Optimized for frontend performance.
+1. **Email & Contact Details**:
+   - In `index.html`, update `rajat.manohara@placeholder.com` to your active email address.
+   - In `js/script.js`, verify `targetEmail = "rajat.manohara@placeholder.com"` matches your address.
+2. **Social Profiles**:
+   - In `index.html` (Hero & Footer sections), replace `https://github.com/placeholder` with your actual GitHub username.
+   - Verify your LinkedIn URL `https://linkedin.com/in/rajatmanohara`.
+3. **University / Education**:
+   - In `index.html` within the `#experience` section, replace `[Your University / College Name]` with your actual degree institution.
+4. **Verified Certifications**:
+   - In the `#achievements` section, add links or credential IDs to the editable certification card once verified.
 
 ---
-Built by Claude for Rajat Manohara.
+
+## 💻 How to Run & Test Locally
+
+No build tools, bundlers, or servers are required.
+
+1. Double-click `index.html` to open directly in any modern browser (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari).
+2. Alternatively, serve via Python's built-in HTTP server:
+   ```bash
+   python -m http.server 8000
+   ```
+   Then navigate to `http://localhost:8000` in your web browser.
+
+---
+
+## 📄 License
+Created for Rajat Manohara. All rights reserved.

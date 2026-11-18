@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rajat Manohara | Java Backend Developer</title>
-    <meta name="description"
-        content="Professional portfolio of Rajat Manohara, a Java Backend Developer specialized in Spring Boot and REST APIs.">
+    <meta name="description" content="Professional portfolio of Rajat Manohara, an aspiring Java Backend Developer specializing in Spring Boot, REST APIs, and database-driven software architectures.">
+    <meta name="author" content="Rajat Manohara">
+    <meta name="keywords" content="Rajat Manohara, Java Developer, Backend Developer, Spring Boot, REST API, MySQL, PostgreSQL, Software Engineer">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Rajat Manohara | Java Backend Developer">
+    <meta property="og:description" content="Building reliable, scalable backend systems with Java, Spring Boot, and relational databases.">
+    <meta property="og:type" content="website">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Lucide Icons -->
+
+    <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body class="dark-theme">
-    <!-- Header/Navbar -->
+    <!-- Skip to Content for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header / Navbar -->
     <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">RM<span>.</span></a>
+        <nav class="nav container" aria-label="Main Navigation">
+            <a href="#home" class="nav__logo" aria-label="Rajat Manohara Home">
+                <span class="nav__logo-prefix">RM</span><span class="nav__logo-dot">.</span>
+                <span class="nav__logo-sub">dev</span>
+            </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -31,60 +43,118 @@
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#achievements" class="nav__link">Milestones</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
-                <div class="nav__close" id="nav-close">
+                <button type="button" class="nav__close" id="nav-close" aria-label="Close navigation menu">
                     <i data-lucide="x"></i>
-                </div>
+                </button>
             </div>
 
             <div class="nav__btns">
-                <a href="#" class="btn btn--small btn--ghost">Resume</a>
-                <div class="nav__toggle" id="nav-toggle">
+                <a href="#contact" class="btn btn--small btn--outline nav__cta-btn">Get In Touch</a>
+                <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
                     <i data-lucide="menu"></i>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
 
-    <main class="main">
+    <!-- Main Content -->
+    <main class="main" id="main-content">
         <!-- Hero Section -->
-        <section class="hero section" id="home">
+        <section class="hero section" id="home" aria-label="Introduction">
+            <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+            <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
             <div class="hero__container container grid">
                 <div class="hero__content">
-                    <span class="hero__subtitle">Welcome to my world</span>
-                    <h1 class="hero__title">Hi, I'm <span class="text-gradient">Rajat Manohara</span></h1>
-                    <h2 class="hero__profession"><span class="typing"></span></h2>
+                    <div class="hero__badge">
+                        <span class="hero__badge-dot"></span>
+                        <span>Available for Java Backend Roles</span>
+                    </div>
+
+                    <h1 class="hero__title">
+                        Building Reliable <span class="text-gradient">Backend Systems</span> with Java
+                    </h1>
+
+                    <h2 class="hero__profession">
+                        <span class="hero__profession-static">Focusing on </span>
+                        <span class="typing" aria-hidden="true"></span>
+                        <span class="typing-sr sr-only">Java Backend Development, Spring Boot Services, RESTful APIs, and Relational Databases</span>
+                    </h2>
+
                     <p class="hero__description">
-                        I build practical, scalable, and intelligent software solutions with a primary focus on Java
-                        backend development, database management, and AI integration.
+                        Hi, I'm <strong class="hero__name-highlight">Rajat Manohara</strong>, an aspiring Java Backend Developer. I design and build robust backend architectures, clean REST APIs, and database-driven applications with a strong focus on maintainability, performance, and pragmatic problem-solving.
                     </p>
 
                     <div class="hero__buttons">
-                        <a href="#projects" class="btn btn--primary">View Projects</a>
-                        <a href="#contact" class="btn btn--outline">Contact Me</a>
-                    </div>
-
-                    <div class="hero__social">
-                        <a href="https://github.com/placeholder" target="_blank" class="hero__social-link">
-                            <i data-lucide="github"></i>
+                        <a href="#projects" class="btn btn--primary">
+                            <span>View Projects</span>
+                            <i data-lucide="arrow-down-right"></i>
                         </a>
-                        <a href="https://linkedin.com/in/placeholder" target="_blank" class="hero__social-link">
-                            <i data-lucide="linkedin"></i>
-                        </a>
-                        <a href="mailto:placeholder@email.com" class="hero__social-link">
+                        <a href="#contact" class="btn btn--secondary">
+                            <span>Contact Me</span>
                             <i data-lucide="mail"></i>
                         </a>
                     </div>
+
+                    <div class="hero__social">
+                        <span class="hero__social-label">Connect:</span>
+                        <div class="hero__social-links">
+                            <a href="https://github.com/placeholder" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub Profile (Update with your username)">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/rajatmanohara" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn Profile">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="mailto:rajat.manohara@placeholder.com" class="hero__social-link" aria-label="Send direct email to Rajat Manohara">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="hero__visual">
-                    <div class="hero__blob">
-                        <div class="hero__blob-content">
-                            <i data-lucide="code-2" class="hero__icon hero__icon-1"></i>
-                            <i data-lucide="database" class="hero__icon hero__icon-2"></i>
-                            <i data-lucide="server" class="hero__icon hero__icon-3"></i>
-                            <i data-lucide="cpu" class="hero__icon hero__icon-4"></i>
+                <!-- Hero Interactive Visual: Backend Architecture Terminal -->
+                <div class="hero__visual" aria-label="Interactive Backend Architecture Card">
+                    <div class="code-terminal">
+                        <div class="code-terminal__header">
+                            <div class="code-terminal__dots" aria-hidden="true">
+                                <span class="dot dot--red"></span>
+                                <span class="dot dot--yellow"></span>
+                                <span class="dot dot--green"></span>
+                            </div>
+                            <span class="code-terminal__title">
+                                <i data-lucide="file-code" class="code-terminal__icon"></i>
+                                BackendApplication.java
+                            </span>
+                            <span class="code-terminal__status">
+                                <span class="status-indicator"></span> Running
+                            </span>
+                        </div>
+                        <div class="code-terminal__body">
+                            <pre><code><span class="token-annotation">@SpringBootApplication</span>
+<span class="token-keyword">public class</span> <span class="token-class">BackendApplication</span> {
+
+    <span class="token-annotation">@Autowired</span>
+    <span class="token-keyword">private</span> <span class="token-type">ComplianceService</span> complianceService;
+
+    <span class="token-keyword">public static void</span> <span class="token-method">main</span>(<span class="token-type">String</span>[] args) {
+        <span class="token-type">SpringApplication</span>.run(<span class="token-class">BackendApplication</span>.class, args);
+        <span class="token-comment">// Ready for incoming REST requests</span>
+    }
+
+    <span class="token-annotation">@GetMapping</span>(<span class="token-string">"/api/v1/health"</span>)
+    <span class="token-keyword">public</span> <span class="token-type">ResponseEntity</span>&lt;<span class="token-type">Status</span>&gt; <span class="token-method">checkHealth</span>() {
+        <span class="token-keyword">return</span> <span class="token-type">ResponseEntity</span>.ok(<span class="token-keyword">new</span> <span class="token-type">Status</span>(<span class="token-string">"UP"</span>, <span class="token-number">200</span>));
+    }
+}</code></pre>
+                        </div>
+                        <div class="code-terminal__footer">
+                            <div class="tech-pill"><i data-lucide="coffee"></i> Java 17+</div>
+                            <div class="tech-pill"><i data-lucide="server"></i> Spring Boot</div>
+                            <div class="tech-pill"><i data-lucide="database"></i> PostgreSQL / MySQL</div>
+                            <div class="tech-pill"><i data-lucide="link-2"></i> REST APIs</div>
                         </div>
                     </div>
                 </div>
@@ -92,172 +162,363 @@
         </section>
 
         <!-- About Section -->
-        <section class="about section" id="about">
+        <section class="about section" id="about" aria-label="About Rajat Manohara">
             <div class="container">
-                <h2 class="section__title">About Me</h2>
-                <span class="section__subtitle">My Introduction</span>
+                <div class="section__header">
+                    <span class="section__subtitle">About Me</span>
+                    <h2 class="section__title">Engineering Background & Mindset</h2>
+                    <p class="section__description">
+                        Dedicated to creating robust, maintainable, and efficient backend services.
+                    </p>
+                </div>
 
                 <div class="about__container grid">
-                    <div class="about__content">
-                        <p class="about__description">
-                            I am a software developer interested in building practical, scalable, and intelligent
-                            software solutions. My primary focus is Java backend development, problem-solving, database
-                            management, and integrating AI capabilities into real-world applications.
+                    <div class="about__narrative">
+                        <p class="about__paragraph">
+                            I am an aspiring <strong>Java Backend Developer</strong> with a passionate drive for building dependable, data-driven software applications. My engineering focus centers around core Java programming, Object-Oriented Design, the Spring Boot framework, and relational database systems.
                         </p>
+                        <p class="about__paragraph">
+                            I enjoy decomposing complex real-world requirements into clean RESTful service endpoints, structured data models, and scalable business logic. Whether designing database schemas in PostgreSQL/MySQL or integrating AI-assisted workflows into backend services, I prioritize code clarity, defensive error handling, and solid software design principles.
+                        </p>
+                    </div>
 
-                        <div class="about__details grid">
-                            <div class="about__box">
-                                <i data-lucide="target" class="about__icon"></i>
-                                <h3 class="about__title">Approach</h3>
-                                <p class="about__subtitle">I focus on clean code and efficient problem-solving using
-                                    modern architectures.</p>
+                    <div class="about__cards grid">
+                        <article class="about__card">
+                            <div class="about__card-icon">
+                                <i data-lucide="server"></i>
                             </div>
-                            <div class="about__box">
-                                <i data-lucide="trending-up" class="about__icon"></i>
-                                <h3 class="about__title">Goals</h3>
-                                <p class="about__subtitle">Aimed at becoming a versatile Full-Stack Engineer with strong
-                                    backend expertise.</p>
+                            <h3 class="about__card-title">Backend Architecture</h3>
+                            <p class="about__card-text">
+                                Developing modular REST APIs using Java and Spring Boot, emphasizing clean separation of concerns and clear request-response contracts.
+                            </p>
+                        </article>
+
+                        <article class="about__card">
+                            <div class="about__card-icon">
+                                <i data-lucide="database"></i>
                             </div>
-                        </div>
+                            <h3 class="about__card-title">Database Engineering</h3>
+                            <p class="about__card-text">
+                                Designing normalized relational schemas, structuring SQL queries, and utilizing JDBC for reliable data persistence and retrieval.
+                            </p>
+                        </article>
+
+                        <article class="about__card">
+                            <div class="about__card-icon">
+                                <i data-lucide="check-circle-2"></i>
+                            </div>
+                            <h3 class="about__card-title">Software Craftsmanship</h3>
+                            <p class="about__card-text">
+                                Committing to maintainable code, disciplined Git version control, Postman API testing, and continuous learning in modern backend tech.
+                            </p>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section class="skills section" id="skills">
+        <!-- Technical Skills Section -->
+        <section class="skills section" id="skills" aria-label="Technical Skills">
             <div class="container">
-                <h2 class="section__title">Technical Skills</h2>
-                <span class="section__subtitle">My Toolbox</span>
+                <div class="section__header">
+                    <span class="section__subtitle">Technical Competencies</span>
+                    <h2 class="section__title">Skills & Technologies</h2>
+                    <p class="section__description">
+                        Realistic, categorized toolset focused on backend engineering and software development.
+                    </p>
+                </div>
 
                 <div class="skills__container grid">
                     <!-- Programming -->
-                    <div class="skills__content">
-                        <h3 class="skills__header">
-                            <i data-lucide="terminal" class="skills__icon"></i>
-                            Programming Languages
-                        </h3>
-                        <div class="skills__list grid">
-                            <div class="skills__data"><span>Java</span></div>
-                            <div class="skills__data"><span>Python</span></div>
-                            <div class="skills__data"><span>JavaScript</span></div>
-                            <div class="skills__data"><span>TypeScript</span></div>
+                    <div class="skills__category">
+                        <div class="skills__cat-header">
+                            <div class="skills__cat-icon skills__cat-icon--purple">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <div>
+                                <h3 class="skills__cat-title">Programming</h3>
+                                <span class="skills__cat-meta">Core Languages</span>
+                            </div>
                         </div>
+                        <ul class="skills__tags-list">
+                            <li class="skill-tag skill-tag--featured">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">Java</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">Python</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">JavaScript</span>
+                            </li>
+                        </ul>
                     </div>
 
                     <!-- Backend -->
-                    <div class="skills__content">
-                        <h3 class="skills__header">
-                            <i data-lucide="layers" class="skills__icon"></i>
-                            Backend Development
-                        </h3>
-                        <div class="skills__list grid">
-                            <div class="skills__data"><span>Spring Boot</span></div>
-                            <div class="skills__data"><span>REST APIs</span></div>
-                            <div class="skills__data"><span>FastAPI</span></div>
-                            <div class="skills__data"><span>JDBC</span></div>
+                    <div class="skills__category">
+                        <div class="skills__cat-header">
+                            <div class="skills__cat-icon skills__cat-icon--cyan">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <div>
+                                <h3 class="skills__cat-title">Backend Development</h3>
+                                <span class="skills__cat-meta">Frameworks & Services</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Frontend -->
-                    <div class="skills__content">
-                        <h3 class="skills__header">
-                            <i data-lucide="layout" class="skills__icon"></i>
-                            Frontend Development
-                        </h3>
-                        <div class="skills__list grid">
-                            <div class="skills__data"><span>HTML / CSS</span></div>
-                            <div class="skills__data"><span>JavaScript</span></div>
-                            <div class="skills__data"><span>React</span></div>
-                        </div>
+                        <ul class="skills__tags-list">
+                            <li class="skill-tag skill-tag--featured">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">Spring Boot</span>
+                            </li>
+                            <li class="skill-tag skill-tag--featured">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">REST APIs</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">JDBC</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">FastAPI</span>
+                            </li>
+                        </ul>
                     </div>
 
                     <!-- Databases -->
-                    <div class="skills__content">
-                        <h3 class="skills__header">
-                            <i data-lucide="database" class="skills__icon"></i>
-                            Databases
-                        </h3>
-                        <div class="skills__list grid">
-                            <div class="skills__data"><span>MySQL</span></div>
-                            <div class="skills__data"><span>PostgreSQL</span></div>
+                    <div class="skills__category">
+                        <div class="skills__cat-header">
+                            <div class="skills__cat-icon skills__cat-icon--purple">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <div>
+                                <h3 class="skills__cat-title">Databases</h3>
+                                <span class="skills__cat-meta">Relational Storage</span>
+                            </div>
                         </div>
+                        <ul class="skills__tags-list">
+                            <li class="skill-tag skill-tag--featured">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">PostgreSQL</span>
+                            </li>
+                            <li class="skill-tag skill-tag--featured">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">MySQL</span>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- Tools -->
-                    <div class="skills__content">
-                        <h3 class="skills__header">
-                            <i data-lucide="wrench" class="skills__icon"></i>
-                            Developer Tools
-                        </h3>
-                        <div class="skills__list grid">
-                            <div class="skills__data"><span>Git & GitHub</span></div>
-                            <div class="skills__data"><span>VS Code</span></div>
-                            <div class="skills__data"><span>Postman</span></div>
-                            <div class="skills__data"><span>IntelliJ IDEA</span></div>
+                    <!-- Frontend -->
+                    <div class="skills__category">
+                        <div class="skills__cat-header">
+                            <div class="skills__cat-icon skills__cat-icon--cyan">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <div>
+                                <h3 class="skills__cat-title">Frontend</h3>
+                                <span class="skills__cat-meta">Web Foundations</span>
+                            </div>
                         </div>
+                        <ul class="skills__tags-list">
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">HTML5</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">CSS3</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">JavaScript</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Developer Tools -->
+                    <div class="skills__category skills__category--span">
+                        <div class="skills__cat-header">
+                            <div class="skills__cat-icon skills__cat-icon--purple">
+                                <i data-lucide="wrench"></i>
+                            </div>
+                            <div>
+                                <h3 class="skills__cat-title">Developer Tools</h3>
+                                <span class="skills__cat-meta">Workflow & Environment</span>
+                            </div>
+                        </div>
+                        <ul class="skills__tags-list">
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">Git</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">GitHub</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">IntelliJ IDEA</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">Postman</span>
+                            </li>
+                            <li class="skill-tag">
+                                <span class="skill-tag__dot"></span>
+                                <span class="skill-tag__name">VS Code</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section class="projects section" id="projects">
+        <!-- Featured Projects Section -->
+        <section class="projects section" id="projects" aria-label="Featured Projects">
             <div class="container">
-                <h2 class="section__title">Featured Projects</h2>
-                <span class="section__subtitle">Recent Work</span>
+                <div class="section__header">
+                    <span class="section__subtitle">Featured Work</span>
+                    <h2 class="section__title">Practical Projects</h2>
+                    <p class="section__description">
+                        Verified software projects and prototypes with transparent implementation status.
+                    </p>
+                </div>
 
                 <div class="projects__container grid">
-                    <!-- Project 1 -->
-                    <article class="projects__card">
-                        <div class="projects__img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop"
-                                alt="BIS360 Project" class="projects__img">
-                            <div class="projects__status">Active</div>
-                        </div>
-                        <div class="projects__content">
-                            <h3 class="projects__title">BIS360 — AI Standards & Compliance Copilot</h3>
-                            <p class="projects__description">
-                                An AI-powered intelligent assistant designed to help industries understand Indian
-                                Standards and BIS compliance requirements.
-                            </p>
-                            <div class="projects__tags">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>RAG</span>
-                                <span>AI</span>
+                    <!-- Project 1: BIS360 -->
+                    <article class="projects__card" aria-labelledby="project-1-title">
+                        <div class="projects__header-bar">
+                            <div class="projects__type-tag">
+                                <i data-lucide="shield-check"></i>
+                                <span>Enterprise & Compliance</span>
                             </div>
-                            <div class="projects__links">
-                                <a href="#" class="btn btn--small btn--ghost">GitHub <i data-lucide="github"></i></a>
-                                <a href="#" class="btn btn--small btn--primary">Live Demo <i
-                                        data-lucide="external-link"></i></a>
+                            <span class="badge badge--in-progress">In Development / Prototype</span>
+                        </div>
+
+                        <div class="projects__content">
+                            <h3 class="projects__title" id="project-1-title">
+                                BIS360 – AI Standards & Compliance Copilot
+                            </h3>
+
+                            <p class="projects__description">
+                                An intelligent assistant designed to help industries, manufacturers, and consumers discover applicable Indian Standards (BIS) and navigate complex regulatory compliance requirements efficiently.
+                            </p>
+
+                            <!-- Capabilities Breakdown -->
+                            <div class="projects__capabilities">
+                                <h4 class="projects__subheading">Key Capabilities & Status:</h4>
+                                <ul class="capabilities__list">
+                                    <li class="capability-item capability-item--done">
+                                        <i data-lucide="check" class="capability-icon"></i>
+                                        <span><strong>Applicable Standards Discovery:</strong> Domain-based search and categorization of Indian Standards.</span>
+                                        <span class="status-pill status-pill--done">Implemented</span>
+                                    </li>
+                                    <li class="capability-item capability-item--wip">
+                                        <i data-lucide="clock" class="capability-icon"></i>
+                                        <span><strong>AI Standards Navigator:</strong> Interactive query interface to explore technical specifications.</span>
+                                        <span class="status-pill status-pill--wip">In Progress</span>
+                                    </li>
+                                    <li class="capability-item capability-item--wip">
+                                        <i data-lucide="clock" class="capability-icon"></i>
+                                        <span><strong>RAG-based Intelligent Assistant:</strong> Retrieval-Augmented Generation over standard docs.</span>
+                                        <span class="status-pill status-pill--wip">In Progress</span>
+                                    </li>
+                                    <li class="capability-item capability-item--planned">
+                                        <i data-lucide="circle-dashed" class="capability-icon"></i>
+                                        <span><strong>Personalized Compliance Roadmap:</strong> Dynamic compliance readiness roadmap.</span>
+                                        <span class="status-pill status-pill--planned">Planned</span>
+                                    </li>
+                                    <li class="capability-item capability-item--planned">
+                                        <i data-lucide="circle-dashed" class="capability-icon"></i>
+                                        <span><strong>Digital Compliance Twin & Next Best Action:</strong> Continuous audit and suggestions.</span>
+                                        <span class="status-pill status-pill--planned">Planned</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="projects__tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">REST APIs</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">RAG Concept</span>
+                            </div>
+
+                            <div class="projects__actions">
+                                <div class="projects__status-note">
+                                    <i data-lucide="info"></i>
+                                    <span>Core architecture & standards indexing actively in development.</span>
+                                </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 2 -->
-                    <article class="projects__card">
-                        <div class="projects__img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop"
-                                alt="Smart Deal Finder Project" class="projects__img">
-                            <div class="projects__status">Completed</div>
-                        </div>
-                        <div class="projects__content">
-                            <h3 class="projects__title">Smart Deal Finder & Price Tracker</h3>
-                            <p class="projects__description">
-                                A smart product comparison and price-tracking platform for better purchasing decisions
-                                across platforms.
-                            </p>
-                            <div class="projects__tags">
-                                <span>Python</span>
-                                <span>FastAPI</span>
-                                <span>Scraping</span>
-                                <span>Chart.js</span>
+                    <!-- Project 2: Smart Deal Finder -->
+                    <article class="projects__card" aria-labelledby="project-2-title">
+                        <div class="projects__header-bar">
+                            <div class="projects__type-tag">
+                                <i data-lucide="shopping-cart"></i>
+                                <span>E-Commerce & Data</span>
                             </div>
-                            <div class="projects__links">
-                                <a href="#" class="btn btn--small btn--ghost">GitHub <i data-lucide="github"></i></a>
-                                <a href="#" class="btn btn--small btn--primary">Live Demo <i
-                                        data-lucide="external-link"></i></a>
+                            <span class="badge badge--concept">Prototype & Concept</span>
+                        </div>
+
+                        <div class="projects__content">
+                            <h3 class="projects__title" id="project-2-title">
+                                Smart Deal Finder & Price Tracker
+                            </h3>
+
+                            <p class="projects__description">
+                                A platform concept for tracking and comparing product prices across shopping platforms, empowering consumers to identify genuine deals and make data-driven purchasing decisions.
+                            </p>
+
+                            <!-- Capabilities Breakdown -->
+                            <div class="projects__capabilities">
+                                <h4 class="projects__subheading">Key Capabilities & Status:</h4>
+                                <ul class="capabilities__list">
+                                    <li class="capability-item capability-item--done">
+                                        <i data-lucide="check" class="capability-icon"></i>
+                                        <span><strong>Product Price Comparison:</strong> Multi-platform price data parsing and normalization.</span>
+                                        <span class="status-pill status-pill--done">Implemented</span>
+                                    </li>
+                                    <li class="capability-item capability-item--wip">
+                                        <i data-lucide="clock" class="capability-icon"></i>
+                                        <span><strong>Price Tracking Engine:</strong> Automated tracking logic for product price variations.</span>
+                                        <span class="status-pill status-pill--wip">In Progress</span>
+                                    </li>
+                                    <li class="capability-item capability-item--wip">
+                                        <i data-lucide="clock" class="capability-icon"></i>
+                                        <span><strong>Historical Price Graphs:</strong> Data visualization of price changes over time.</span>
+                                        <span class="status-pill status-pill--wip">In Progress</span>
+                                    </li>
+                                    <li class="capability-item capability-item--planned">
+                                        <i data-lucide="circle-dashed" class="capability-icon"></i>
+                                        <span><strong>Budget-based Product Discovery:</strong> Smart filtering based on target user budget.</span>
+                                        <span class="status-pill status-pill--planned">Planned</span>
+                                    </li>
+                                    <li class="capability-item capability-item--planned">
+                                        <i data-lucide="circle-dashed" class="capability-icon"></i>
+                                        <span><strong>AI Recommendation Assistant:</strong> Context-aware deal score and recommendations.</span>
+                                        <span class="status-pill status-pill--planned">Planned</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="projects__tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Web Scraping</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">REST Endpoints</span>
+                            </div>
+
+                            <div class="projects__actions">
+                                <div class="projects__status-note">
+                                    <i data-lucide="info"></i>
+                                    <span>Data extraction engine & price comparison pipeline in active testing.</span>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -265,37 +526,79 @@
             </div>
         </section>
 
-        <!-- Experience & Education -->
-        <section class="experience section" id="experience">
+        <!-- Experience & Education Section -->
+        <section class="experience section" id="experience" aria-label="Experience and Education">
             <div class="container">
-                <h2 class="section__title">Experience & Education</h2>
-                <span class="section__subtitle">My Journey</span>
+                <div class="section__header">
+                    <span class="section__subtitle">Background</span>
+                    <h2 class="section__title">Education & Practical Growth</h2>
+                    <p class="section__description">
+                        Verified academic foundation and focused engineering development.
+                    </p>
+                </div>
 
                 <div class="experience__container grid">
+                    <!-- Education Column -->
                     <div class="experience__group">
-                        <h3 class="experience__header">Education</h3>
-                        <div class="experience__data">
-                            <div class="experience__item">
-                                <h4 class="experience__title">[Your University Name]</h4>
-                                <span class="experience__subtitle">Bachelor of Technology in CS/IT</span>
-                                <div class="experience__calendar">
-                                    <i data-lucide="calendar"></i>
-                                    2021 - 2025 (Expected)
+                        <div class="experience__group-header">
+                            <i data-lucide="graduation-cap" class="experience__group-icon"></i>
+                            <h3 class="experience__header">Academic Education</h3>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="timeline__marker"></div>
+                                <div class="timeline__content">
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">Bachelor of Technology (B.Tech)</h4>
+                                        <span class="timeline__date">2021 – 2025 (Expected)</span>
+                                    </div>
+                                    <span class="timeline__institution">[Your University / College Name]</span>
+                                    <p class="timeline__description">
+                                        Computer Science & Engineering. Core coursework in Object-Oriented Programming, Data Structures & Algorithms, Database Management Systems (DBMS), Operating Systems, and Computer Networks.
+                                    </p>
+                                    <div class="timeline__note">
+                                        <i data-lucide="edit-3"></i>
+                                        <span>Tip: Replace "[Your University / College Name]" with your actual institution.</span>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Add more items with placeholders as needed -->
                         </div>
                     </div>
 
+                    <!-- Practical Experience & Projects Column -->
                     <div class="experience__group">
-                        <h3 class="experience__header">Experience</h3>
-                        <div class="experience__data">
-                            <div class="experience__item">
-                                <h4 class="experience__title">[Company Name]</h4>
-                                <span class="experience__subtitle">Software Developer Intern</span>
-                                <div class="experience__calendar">
-                                    <i data-lucide="calendar"></i>
-                                    June 2024 - Present
+                        <div class="experience__group-header">
+                            <i data-lucide="briefcase" class="experience__group-icon"></i>
+                            <h3 class="experience__header">Practical Development</h3>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="timeline__marker"></div>
+                                <div class="timeline__content">
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">Backend & Software Development Projects</h4>
+                                        <span class="timeline__date">2023 – Present</span>
+                                    </div>
+                                    <span class="timeline__institution">Self-Directed & Academic Projects</span>
+                                    <p class="timeline__description">
+                                        Architected and built backend services with Java and Spring Boot. Modeled relational schemas in PostgreSQL/MySQL, implemented REST API endpoints, and practiced collaborative version control with Git.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline__item timeline__item--placeholder">
+                                <div class="timeline__marker timeline__marker--dashed"></div>
+                                <div class="timeline__content">
+                                    <div class="timeline__header">
+                                        <h4 class="timeline__title">[Software Developer Intern / Role]</h4>
+                                        <span class="timeline__date">[Month Year – Month Year]</span>
+                                    </div>
+                                    <span class="timeline__institution">[Company / Organization Name]</span>
+                                    <p class="timeline__description">
+                                        Editable placeholder for verified internship or industry experience. Update this card once an official internship or professional engagement is completed.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -304,68 +607,214 @@
             </div>
         </section>
 
-        <!-- Achievements & Certifications -->
-        <section class="achievements section">
+        <!-- Achievements & Certifications Section -->
+        <section class="achievements section" id="achievements" aria-label="Achievements and Certifications">
             <div class="container">
-                <h2 class="section__title">Achievements</h2>
-                <span class="section__subtitle">Recognition</span>
+                <div class="section__header">
+                    <span class="section__subtitle">Milestones</span>
+                    <h2 class="section__title">Verified Competencies & Milestones</h2>
+                    <p class="section__description">
+                        Realistic technical achievements and verified focus areas based on genuine engineering work.
+                    </p>
+                </div>
 
                 <div class="achievements__container grid">
-                    <div class="achievements__card">
-                        <i data-lucide="award" class="achievements__icon"></i>
-                        <h3 class="achievements__title">Java Certification</h3>
-                        <p class="achievements__description">[Provider Name Placeholder]</p>
-                    </div>
-                    <div class="achievements__card">
-                        <i data-lucide="code" class="achievements__icon"></i>
-                        <h3 class="achievements__title">Hackathon Winner</h3>
-                        <p class="achievements__description">[Event Name Placeholder]</p>
-                    </div>
+                    <article class="achievements__card">
+                        <div class="achievements__icon-box">
+                            <i data-lucide="code" class="achievements__icon"></i>
+                        </div>
+                        <h3 class="achievements__title">Core Java Mastery</h3>
+                        <p class="achievements__description">
+                            Solid foundation in Object-Oriented Programming, Java Collections Framework, Exception Handling, Streams API, and multithreading fundamentals.
+                        </p>
+                        <span class="achievements__tag">Verified Technical Focus</span>
+                    </article>
+
+                    <article class="achievements__card">
+                        <div class="achievements__icon-box">
+                            <i data-lucide="database" class="achievements__icon"></i>
+                        </div>
+                        <h3 class="achievements__title">Relational Database Design</h3>
+                        <p class="achievements__description">
+                            Practical experience designing normalized schemas, writing complex SQL queries, handling transactions, and connecting backends via JDBC.
+                        </p>
+                        <span class="achievements__tag">Verified Technical Focus</span>
+                    </article>
+
+                    <article class="achievements__card">
+                        <div class="achievements__icon-box">
+                            <i data-lucide="network" class="achievements__icon"></i>
+                        </div>
+                        <h3 class="achievements__title">RESTful API Design</h3>
+                        <p class="achievements__description">
+                            Demonstrated ability to structure scalable HTTP REST endpoints, input validations, defensive exception handling, and testing contracts in Postman.
+                        </p>
+                        <span class="achievements__tag">Verified Technical Focus</span>
+                    </article>
+
+                    <article class="achievements__card achievements__card--placeholder">
+                        <div class="achievements__icon-box achievements__icon-box--alt">
+                            <i data-lucide="award" class="achievements__icon"></i>
+                        </div>
+                        <h3 class="achievements__title">Verified Certifications</h3>
+                        <p class="achievements__description">
+                            Placeholder slot for your verified industry credentials (e.g., Oracle Certified Java Associate, HackerRank Java, or AWS/Cloud certifications).
+                        </p>
+                        <span class="achievements__tag achievements__tag--editable">[Editable Slot]</span>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact" aria-label="Contact Information and Inquiries">
             <div class="container">
-                <h2 class="section__title">Get In Touch</h2>
-                <span class="section__subtitle">Contact Me</span>
+                <div class="section__header">
+                    <span class="section__subtitle">Get In Touch</span>
+                    <h2 class="section__title">Let's Connect</h2>
+                    <p class="section__description">
+                        Interested in discussing Java backend opportunities, software projects, or collaboration? Reach out directly.
+                    </p>
+                </div>
 
                 <div class="contact__container grid">
+                    <!-- Contact Cards -->
                     <div class="contact__info">
                         <div class="contact__card">
-                            <i data-lucide="mail" class="contact__card-icon"></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">rajat.manohara@placeholder.com</span>
+                            <div class="contact__card-icon-box">
+                                <i data-lucide="mail" class="contact__card-icon"></i>
+                            </div>
+                            <div class="contact__card-content">
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data" id="contact-email-text">rajat.manohara@placeholder.com</span>
+                                <div class="contact__card-actions">
+                                    <button type="button" class="btn btn--copy" id="copy-email-btn" aria-label="Copy email address to clipboard">
+                                        <i data-lucide="copy"></i>
+                                        <span>Copy Email</span>
+                                    </button>
+                                    <a href="mailto:rajat.manohara@placeholder.com" class="btn btn--ghost-link">
+                                        <span>Open Mail Client</span>
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="contact__card">
-                            <i data-lucide="linkedin" class="contact__card-icon"></i>
-                            <h3 class="contact__card-title">LinkedIn</h3>
-                            <span class="contact__card-data">linkedin.com/in/rajatmanohara</span>
+                            <div class="contact__card-icon-box">
+                                <i data-lucide="linkedin" class="contact__card-icon"></i>
+                            </div>
+                            <div class="contact__card-content">
+                                <h3 class="contact__card-title">LinkedIn</h3>
+                                <span class="contact__card-data">linkedin.com/in/rajatmanohara</span>
+                                <div class="contact__card-actions">
+                                    <a href="https://linkedin.com/in/rajatmanohara" target="_blank" rel="noopener noreferrer" class="btn btn--ghost-link">
+                                        <span>Visit Profile</span>
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="contact__card">
-                            <i data-lucide="map-pin" class="contact__card-icon"></i>
-                            <h3 class="contact__card-title">Location</h3>
-                            <span class="contact__card-data">Indore, Madhya Pradesh, India</span>
+                            <div class="contact__card-icon-box">
+                                <i data-lucide="map-pin" class="contact__card-icon"></i>
+                            </div>
+                            <div class="contact__card-content">
+                                <h3 class="contact__card-title">Location</h3>
+                                <span class="contact__card-data">Indore, Madhya Pradesh, India</span>
+                                <span class="contact__card-note">Open to Remote & On-Site Opportunities</span>
+                            </div>
                         </div>
                     </div>
 
-                    <form action="" class="contact__form" id="contact-form">
-                        <div class="contact__form-div">
-                            <label class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Insert your name" class="contact__form-input" required>
+                    <!-- Contact Form -->
+                    <div class="contact__form-wrapper">
+                        <div class="contact__form-notice" role="note">
+                            <i data-lucide="info" class="notice-icon"></i>
+                            <p>
+                                <strong>Static Site Direct Emailing:</strong> Submitting this form prepares your message and launches your email client to send directly to Rajat Manohara. No fake server messages are used.
+                            </p>
                         </div>
-                        <div class="contact__form-div">
-                            <label class="contact__form-tag">Email</label>
-                            <input type="email" placeholder="Insert your email" class="contact__form-input" required>
-                        </div>
-                        <div class="contact__form-div contact__form-area">
-                            <label class="contact__form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your project idea"
-                                class="contact__form-input" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary">Send Message</button>
-                    </form>
+
+                        <form class="contact__form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">
+                                    Your Name <span class="form-required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="contact-name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    placeholder="e.g. Alex Sharma" 
+                                    required 
+                                    autocomplete="name"
+                                >
+                                <span class="form-feedback" id="name-feedback" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">
+                                    Your Email <span class="form-required">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="contact-email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="e.g. alex@example.com" 
+                                    required 
+                                    autocomplete="email"
+                                >
+                                <span class="form-feedback" id="email-feedback" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject" class="form-label">
+                                    Subject <span class="form-required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="contact-subject" 
+                                    name="subject" 
+                                    class="form-input" 
+                                    placeholder="e.g. Java Backend Developer Opportunity" 
+                                    required
+                                >
+                                <span class="form-feedback" id="subject-feedback" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">
+                                    Message <span class="form-required">*</span>
+                                </label>
+                                <textarea 
+                                    id="contact-message" 
+                                    name="message" 
+                                    rows="5" 
+                                    class="form-input form-textarea" 
+                                    placeholder="Write your project details or message here..." 
+                                    required
+                                ></textarea>
+                                <span class="form-feedback" id="message-feedback" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn--primary btn--full" id="form-submit-btn">
+                                    <i data-lucide="send"></i>
+                                    <span>Send via Email Client</span>
+                                </button>
+                                <button type="button" class="btn btn--secondary btn--full" id="copy-message-btn">
+                                    <i data-lucide="clipboard"></i>
+                                    <span>Copy Formatted Message</span>
+                                </button>
+                            </div>
+
+                            <!-- Form Status Banner -->
+                            <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -374,31 +823,59 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer__container container">
-            <h1 class="footer__title">Rajat Manohara</h1>
-            <p class="footer__subtitle">Java Backend Developer | Software Developer</p>
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="#home" class="footer__logo">RM<span>.</span></a>
+                    <h3 class="footer__name">Rajat Manohara</h3>
+                    <p class="footer__role">Java Backend Developer | Software Developer</p>
+                    <p class="footer__location">Indore, Madhya Pradesh, India</p>
+                </div>
 
-            <ul class="footer__list">
-                <li><a href="#about" class="footer__link">About</a></li>
-                <li><a href="#skills" class="footer__link">Skills</a></li>
-                <li><a href="#projects" class="footer__link">Projects</a></li>
-            </ul>
+                <div class="footer__nav-group">
+                    <h4 class="footer__heading">Quick Navigation</h4>
+                    <ul class="footer__list">
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Technical Skills</a></li>
+                        <li><a href="#projects" class="footer__link">Featured Projects</a></li>
+                        <li><a href="#experience" class="footer__link">Experience</a></li>
+                        <li><a href="#achievements" class="footer__link">Milestones</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer__social">
-                <a href="#" target="_blank" class="footer__social-link"><i data-lucide="github"></i></a>
-                <a href="#" target="_blank" class="footer__social-link"><i data-lucide="linkedin"></i></a>
+                <div class="footer__social-group">
+                    <h4 class="footer__heading">Connect</h4>
+                    <div class="footer__social">
+                        <a href="https://github.com/placeholder" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub Profile">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/rajatmanohara" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:rajat.manohara@placeholder.com" class="footer__social-link" aria-label="Direct Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                    <p class="footer__tech-note">Built with semantic HTML5, CSS3, and Vanilla JavaScript.</p>
+                </div>
             </div>
 
-            <span class="footer__copy">&#169; <span id="year"></span> Rajat Manohara. All rights reserved.</span>
+            <div class="footer__bottom">
+                <span class="footer__copy">&#169; <span id="year">2026</span> Rajat Manohara. All rights reserved.</span>
+            </div>
         </div>
     </footer>
 
-    <!-- Back to top -->
-    <a href="#" class="scrollup" id="scroll-up">
+    <!-- Back to Top Button -->
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll back to top">
         <i data-lucide="arrow-up"></i>
     </a>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
-
 </html>
