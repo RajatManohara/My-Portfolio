@@ -2,6 +2,7 @@
  * Rajat Manohara - Portfolio Script
  * Vanilla JavaScript (ES6+)
  * Strictly no frameworks.
+ * java script
  */
 
 "use strict";
