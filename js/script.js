@@ -1,20 +1,20 @@
 /* ==================== MENU SHOW Y HIDDEN ==================== */
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
 /* ===== MENU SHOW ===== */
 /* Validate if constant exists */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
 /* ===== MENU HIDDEN ===== */
 /* Validate if constant exists */
-if(navClose){
-    navClose.addEventListener('click', () =>{
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
@@ -22,7 +22,7 @@ if(navClose){
 /* ==================== REMOVE MENU MOBILE ==================== */
 const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction(){
+function linkAction() {
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
@@ -81,35 +81,35 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==================== CHANGE BACKGROUND HEADER ==================== */
-function scrollHeader(){
+function scrollHeader() {
     const header = document.getElementById('header')
     // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    if (this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
 /* ==================== SHOW SCROLL UP ==================== */
-function scrollUp(){
+function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
 /* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
@@ -153,7 +153,7 @@ document.head.appendChild(style);
 /* ==================== CONTACT FORM ==================== */
 const contactForm = document.getElementById('contact-form')
 
-if(contactForm) {
+if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
@@ -162,7 +162,7 @@ if(contactForm) {
         const email = contactForm.querySelector('input[type="email"]').value;
         const message = contactForm.querySelector('textarea').value;
 
-        if(name && email && message) {
+        if (name && email && message) {
             // Success feedback
             const btn = contactForm.querySelector('button');
             const originalText = btn.textContent;
